@@ -117,7 +117,7 @@ function openMenu() {
     backgroundWrapper.classList.add("show_menu_blur");
     backgroundWrapper.classList.remove("hide_menu_blur");
     main.classList.add("overflow_clip");
-    console.log(menu);
+
 }
 function closeMenu() {
     backgroundWrapper.classList.remove("show_menu_blur");
@@ -127,5 +127,5 @@ function closeMenu() {
     openMenuButton.style.display = "inline-block";
     closeMenuButton.style.display = "none";
     main.classList.remove("overflow_clip");
-    console.log("close");
+
 }
