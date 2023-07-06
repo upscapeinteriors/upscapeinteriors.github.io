@@ -13,7 +13,7 @@
 // const maxRight = width * (5 - 1);
 
 let timer = Date.now();
-
+const main = document.getElementsByTagName("body").item(0);
 
 let initialCarouselLeft = 0;
 const carousel = document.getElementById('projects_carousel');
@@ -116,6 +116,8 @@ function openMenu() {
     closeMenuButton.style.display = "inline-block";
     backgroundWrapper.classList.add("show_menu_blur");
     backgroundWrapper.classList.remove("hide_menu_blur");
+    main.classList.add("overflow_clip");
+    console.log(menu);
 }
 function closeMenu() {
     backgroundWrapper.classList.remove("show_menu_blur");
@@ -124,4 +126,6 @@ function closeMenu() {
     menu.classList.remove("show_menu");
     openMenuButton.style.display = "inline-block";
     closeMenuButton.style.display = "none";
+    main.classList.remove("overflow_clip");
+    console.log("close");
 }
